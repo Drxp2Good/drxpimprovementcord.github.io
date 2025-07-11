@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Drxp Improvement Cord</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-image: url('../assets/gradient_background_1920x1080.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      width: 120px;
+      height: auto;
+    }
+
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .nav a {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 160px;
+      gap: 24px;
+      max-width: 800px;
+      width: 90%;
+    }
+
+    .glass-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    a.back-home {
+      margin-top: 10px;
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    a.back-home:hover {
+      text-decoration: underline;
+      color: #66ccff;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+        gap: 8px;
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .glass-box {
+        padding: 16px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="../assets/logo_dc.png" alt="Drxp Logo" class="logo" />
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="meet.html">Meet the Team</a>
+    <a href="partnerships.html">Partnerships</a>
+    <a href="log in.html">Log in</a>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="glass-box">
+      <h1>About Us</h1>
+      <p>
+        At <strong>Drxp Improvement Cord</strong>, we help Fortnite players of all skill levels reach their true potential.
+        From free coaching and drop maps to pro-level guidance and community support — we provide everything you need to succeed.
+      </p>
+    </div>
+
+    <div class="glass-box">
+      <h1>Socials</h1>
+      <p>Coming Soon...</p>
+    </div>
+
+    <a class="back-home" href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>

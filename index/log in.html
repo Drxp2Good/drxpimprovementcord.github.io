@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Drxp Improvement Cord</title>
+  <style>
+               body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url(../assets/gradient_background_1920x1080.png); /* Replace with your image path */
+      background-size: cover;       /* Scales image to cover entire page */
+      background-position: center;  /* Centers the image */
+      background-repeat: no-repeat; /* Prevents tiling */
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+   body {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      width: 300px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav a {
+      color: white;
+      background-color: #444;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: #666;
+    }
+
+    .login-container {
+      background-color: #1c1c1c;
+      padding: 25px 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      color: #00aaff;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #008fcc;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="meet.html">Meet the Team</a>
+    <a href="partnerships.html">Partnerships</a>
+    <a href="log in.html">Log in</a>
+  </div>
+
+  <img src="../assets/logo_dc.png" alt="Drxp Logo" class="logo" />
+
+  <div class="login-container">
+    <h2>Member Login</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <div class="footer">
+      <p>Don't have an account? <a href="sign up.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+      const form = e.target;
+      const username = form.username.value.trim();
+      const password = form.password.value.trim();
+
+      if (!username || !password) {
+        alert("Please fill out all fields.");
+        return false;
+      }
+
+      // Simulate login success
+      alert(`Welcome back, ${username}!`);
+      // Optional redirect: window.location.href = "index.html";
+      return true;
+    }
+  </script>
+</body>
+</html>
